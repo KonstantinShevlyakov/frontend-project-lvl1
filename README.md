@@ -5,4 +5,4 @@
 <a href="https://codeclimate.com/github/KonstantinShevlyakov/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/d089eb809e5b1b295034/maintainability" /></a>
 
 ### Github-Actions badge:
-![example workflow](https://github.com/KonstantinShevlyakov/frontend-project-lvl1/actions/workflows/github-actions-project.yml/badge.svg)
+[![Linter](https://github.com/KonstantinShevlyakov/frontend-project-lvl1/actions/workflows/github-actions-project/badge.svg)](https://github.com/KonstantinShevlyakov/frontend-project-lvl1/actions)
