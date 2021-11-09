@@ -6,3 +6,5 @@ publish: # публикация пакета
 	npm publish --dry-run
 lint: # запуск eslint
 	npx eslint .
+brain-even: # запуск проекта brain-even
+	node bin/brain-even.js
