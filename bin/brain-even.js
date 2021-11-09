@@ -14,7 +14,7 @@ const brainEvenGame = () => {
            console.log('Correct!');
            count += 1;
        } else {
-           console.log(`"${question}" is wrong answer ;(. Correct answer was.\nLet's try again, ${userName}!`);
+           console.log(`"${question}" is wrong answer ;(. Correct answer was "${num % 2 ? 'no' : 'yes'}".\nLet's try again, ${userName}!`);
            count = 0;
        }
     }
