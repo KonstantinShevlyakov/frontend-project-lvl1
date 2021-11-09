@@ -1,0 +1,11 @@
+name: github-actions-project
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+     	 run: make lint
