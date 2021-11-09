@@ -6,3 +6,5 @@
 
 ### Github-Actions badge:
 [![Linter](https://github.com/KonstantinShevlyakov/frontend-project-lvl1/actions/workflows/github-actions-project/badge.svg)](https://github.com/KonstantinShevlyakov/frontend-project-lvl1/actions)
+
+[![Brain-even](https://asciinema.org/a/c39JmU5tlgUAiHpwl6BMlrWMB)]
