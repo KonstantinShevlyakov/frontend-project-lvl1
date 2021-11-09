@@ -5,4 +5,4 @@ jobs:
     runs-on: macos-latest
     steps:
     - name: lint	
-      run: npx eslint . --fix
+      run: npx eslint --fix
