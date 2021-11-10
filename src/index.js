@@ -38,4 +38,3 @@ export const getCalcResult = (num1, num2, operator) => {
     }
 };
 
-
