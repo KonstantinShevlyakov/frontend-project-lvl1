@@ -21,15 +21,21 @@ export const playerWin = (userName) => {
 
 export const random = (min, max) => Math.floor(Math.random() * (max - min)) + min;
 
-export const getRandomOperator = () => {
-    const randomPercentage = Math.random();
-    if (randomPercentage < 0.33) {
-        return '+';
-    } else if (randomPercentage < 0.66) {
-        return '-';
-    }
-    return '*';
+export const getRandomOperator = (num1, num2) => {
+    const operators = ['-', '+', '*'];
+    const randomOperator = operators[Math.floor(Math.random() * operators.length)];
+    return randomOperator;
 };
 
+export const getCalcResult = (num1, num2, operator) => {
+    switch (operator) {
+        case '-':
+            return (num1 - num2);
+        case '+':
+            return (num1 + num2);
+        case '*':
+            return (num1 * num2);
+    }
+};
 
 
