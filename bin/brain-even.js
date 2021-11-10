@@ -1,24 +1,20 @@
 #!/usr/bin/env node
-
-import readlineSync from 'readline-sync';
-
-const random = (min, max) => Math.floor(Math.random() * (max - min)) + min;
+import {greeting, mainQuestion, playerLost, playerWin, random} from "../src/index.js";
 
 const brainEvenGame = () => {
   let count = 0;
-  const userName = readlineSync.question('May I have your name? ');
-  console.log(`Hello ${userName}!\nAnswer "yes" if the number is even, otherwise answer "no".`);
+  const userName = greeting();
   while (count < 3) {
     const num = random(1, 100);
-    const question = readlineSync.question(`Question: ${num}\nYour answer:`);
+    const question = (mainQuestion(num));
     if (((num % 2 === 0) && question === 'yes') || ((num % 2 !== 0) && question === 'no')) {
       console.log('Correct!');
       count += 1;
     } else {
-      console.log(`"${question}" is wrong answer ;(. Correct answer was "${num % 2 ? 'no' : 'yes'}".\nLet's try again, ${userName}!`);
+      console.log(playerLost(question, (num % 2 ? 'no' : 'yes'), userName));
       count = 0;
     }
   }
-  return (`Congratulations,${userName}!`);
+  return playerWin(userName);
 };
 console.log(brainEvenGame());
