@@ -9,13 +9,13 @@ const brainCalcGame = () => {
         const num1 = random(1, 10);
         const num2 = random(1, 10);
         const expression = (`${num1} ${item} ${num2}`);
-        const result = eval(expression);
+        const correctResult = eval(expression);
         const question = eval((mainQuestion(expression)));
-        if (question === result) {
+        if (question === correctResult) {
             console.log('Correct!');
             count += 1;
         } else {
-            console.log(playerLost(question, result, userName));
+            console.log(playerLost(question, correctResult, userName));
             count = 0;
         }
     }
