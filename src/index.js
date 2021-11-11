@@ -32,6 +32,7 @@ export const getCalcResult = (num1, num2, operator) => {
     case '*':
       return (num1 * num2);
   }
+  return ('Error');
 };
 
 export const getGCD = (num1, num2) => {
@@ -44,10 +45,11 @@ export const getGCD = (num1, num2) => {
 
 export const getProg = (arrayLength, progStep, element) => {
   const array = [];
-  array.push(element);
+  let item = element;
+  array.push(item);
   for (let i = 1; i < arrayLength; i += 1) {
-    element = element + progStep;
-    array.push(element);
+    item += progStep;
+    array.push(item);
   }
   const randomElement = array[Math.floor(Math.random() * array.length)];
   const index = array.indexOf(randomElement);
