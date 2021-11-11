@@ -1,5 +1,5 @@
 import {
-  getGCD, greeting, mainQuestion, playerLost, playerWin, random
+  getGCD, greeting, mainQuestion, playerLost, playerWin, random,
 } from '../src/index.js';
 
 const brainGCDGame = () => {
