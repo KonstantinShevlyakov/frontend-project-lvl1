@@ -13,7 +13,7 @@ const brainProgressionGame = () => {
     const element = random(0, 50);
     const progression = getProg(arrayLength, progStep, element);
     const correctResult = getHiddenElement(progression);
-    const question = Number(mainQuestion(`${progression}`));
+    const question = Number(mainQuestion(`${progression.join(' ')}`));
     if (question === correctResult) {
       console.log('Correct!');
       count += 1;

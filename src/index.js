@@ -44,7 +44,7 @@ export const getGCD = (num1, num2) => {
 };
 
 export const getProg = (arrayLength, progStep, element) => {
-  const array = [];
+  let array = [];
   let item = element;
   array.push(item);
   for (let i = 1; i < arrayLength; i += 1) {
