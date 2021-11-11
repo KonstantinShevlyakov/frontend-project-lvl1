@@ -44,7 +44,7 @@ export const getGCD = (num1, num2) => {
 };
 
 export const getProg = (arrayLength, progStep, element) => {
-  let array = [];
+  const array = [];
   let item = element;
   array.push(item);
   for (let i = 1; i < arrayLength; i += 1) {
@@ -78,15 +78,15 @@ export const getHiddenElement = (array) => {
 };
 
 export const isPrime = (num) => {
-  const smallestDivisor = (num) => {
+  const smallestDivisor = (numeral) => {
     let counter = 2;
-    for (; num % counter !== 0;) {
+    for (; numeral % counter !== 0;) {
       counter += 1;
     }
     return counter;
-  }
+  };
   if (num >= 1 && smallestDivisor(num) === num) {
-    return "yes";
+    return 'yes';
   }
-  return "no";
+  return 'no';
 };
