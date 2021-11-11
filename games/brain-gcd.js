@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import {
   getGCD, greeting, mainQuestion, playerLost, playerWin, random,
 } from '../src/index.js';
