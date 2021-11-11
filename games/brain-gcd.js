@@ -6,6 +6,7 @@ import {
 const brainGCDGame = () => {
   let count = 0;
   const userName = greeting();
+  console.log('Find the greatest common divisor of given numbers.');
   while (count < 3) {
     const num1 = random(0, 100);
     const num2 = random(0, 100);

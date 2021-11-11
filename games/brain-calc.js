@@ -6,6 +6,7 @@ import {
 const brainCalcGame = () => {
   let count = 0;
   const userName = greeting();
+  console.log('What is the result of the expression?');
   while (count < 3) {
     const randomOperator = getRandomOperator();
     const num1 = random(0, 10);
