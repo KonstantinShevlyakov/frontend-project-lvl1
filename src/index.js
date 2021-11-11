@@ -41,3 +41,34 @@ export const getGCD = (num1, num2) => {
   }
   return num1;
 };
+
+export const getProg = (arrayLength, progStep, element) => {
+  const array = [];
+  array.push(element);
+  for (let i = 1; i < arrayLength; i += 1) {
+    element = element + progStep;
+    array.push(element);
+  }
+  const randomElement = array[Math.floor(Math.random() * array.length)];
+  const index = array.indexOf(randomElement);
+  array[index] = '..';
+  return array;
+};
+
+export const getHiddenElement = (array) => {
+  const index = array.indexOf('..');
+  let element = array[index];
+  let progStep = 0;
+  if (index === 0) {
+    progStep = array[index + 2] - array[index + 1];
+    element = array[index + 1] - progStep;
+  }
+  if (index === array.length - 1) {
+    progStep = array[index - 1] - array[index - 2];
+    element = array[index - 1] + progStep;
+  } else {
+    progStep = (array[index + 1] - array[index - 1]) / 2;
+    element = array[index - 1] + progStep;
+  }
+  return element;
+};
