@@ -7,7 +7,7 @@ const brainEvenGame = () => {
   let count = 0;
   const userName = greeting();
   while (count < 3) {
-    const num = random(1, 100);
+    const num = random(0, 100);
     const question = (mainQuestion(num));
     if (((num % 2 === 0) && question === 'yes') || ((num % 2 !== 0) && question === 'no')) {
       console.log('Correct!');

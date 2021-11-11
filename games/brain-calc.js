@@ -8,8 +8,8 @@ const brainCalcGame = () => {
   const userName = greeting();
   while (count < 3) {
     const randomOperator = getRandomOperator();
-    const num1 = random(1, 10);
-    const num2 = random(1, 10);
+    const num1 = random(0, 10);
+    const num2 = random(0, 10);
     const correctResult = getCalcResult(num1, num2, randomOperator);
     const question = Number(mainQuestion(`${num1} ${randomOperator} ${num2}`));
     if (question === correctResult) {
