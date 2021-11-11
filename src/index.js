@@ -76,3 +76,17 @@ export const getHiddenElement = (array) => {
 
   return element;
 };
+
+export const isPrime = (num) => {
+  const smallestDivisor = (num) => {
+    let counter = 2;
+    for (; num % counter !== 0;) {
+      counter += 1;
+    }
+    return counter;
+  }
+  if (num >= 1 && smallestDivisor(num) === num) {
+    return "yes";
+  }
+  return "no";
+};
