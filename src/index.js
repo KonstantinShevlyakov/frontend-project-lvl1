@@ -33,3 +33,11 @@ export const getCalcResult = (num1, num2, operator) => {
       return (num1 * num2);
   }
 };
+
+export const getGCD = (num1, num2) => {
+  if (num2!==0) {
+    const tmpNum = num1 % num2;
+    return getGCD(num2, tmpNum);
+  }
+  return num1;
+}
