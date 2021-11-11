@@ -3,7 +3,7 @@ import {
   getProg, getHiddenElement, greeting, mainQuestion, playerLost, playerWin, random,
 } from '../src/index.js';
 
-const brainGCDGame = () => {
+const brainProgressionGame = () => {
   let count = 0;
   const userName = greeting();
   console.log('What number is missing in the progression?');
@@ -24,4 +24,4 @@ const brainGCDGame = () => {
   }
   return playerWin(userName);
 };
-console.log(brainGCDGame());
+console.log(brainProgressionGame());
