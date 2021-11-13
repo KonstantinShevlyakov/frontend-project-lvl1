@@ -1,9 +1,8 @@
-#!/usr/bin/env node
 import {
   greeting, mainQuestion, playerLost, playerWin, random, getRandomOperator, getCalcResult,
 } from '../index.js';
 
-const brainCalcGame = () => {
+export const brainCalcGame = () => {
   let count = 0;
   const userName = greeting();
   console.log('What is the result of the expression?');
@@ -23,5 +22,3 @@ const brainCalcGame = () => {
   }
   return playerWin(userName);
 };
-
-export default brainCalcGame();

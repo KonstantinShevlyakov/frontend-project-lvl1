@@ -1,9 +1,8 @@
-#!/usr/bin/env node
 import {
   getGCD, greeting, mainQuestion, playerLost, playerWin, random,
 } from '../index.js';
 
-const brainGCDGame = () => {
+export const brainGCDGame = () => {
   let count = 0;
   const userName = greeting();
   console.log('Find the greatest common divisor of given numbers.');
@@ -22,5 +21,3 @@ const brainGCDGame = () => {
   }
   return playerWin(userName);
 };
-
-export default brainGCDGame();

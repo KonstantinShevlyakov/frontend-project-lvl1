@@ -1,9 +1,8 @@
-#!/usr/bin/env node
 import {
   getProg, getHiddenElement, greeting, mainQuestion, playerLost, playerWin, random,
 } from '../index.js';
 
-const brainProgressionGame = () => {
+export const brainProgressionGame = () => {
   let count = 0;
   const userName = greeting();
   console.log('What number is missing in the progression?');
@@ -24,5 +23,3 @@ const brainProgressionGame = () => {
   }
   return playerWin(userName);
 };
-
-export default brainProgressionGame();

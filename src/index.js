@@ -13,7 +13,7 @@ export const mainQuestion = (num) => {
 
 export const playerLost = (wrongAnswer, correctAnswer, userName) => (`"${wrongAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}".\nLet's try again, ${userName}!`);
 
-export const playerWin = (userName) => (`Congratulations,${userName}!`);
+export const playerWin = (userName) => console.log(`Congratulations,${userName}!`);
 
 export const random = (min, max) => Math.floor(Math.random() * (max - min)) + min;
 

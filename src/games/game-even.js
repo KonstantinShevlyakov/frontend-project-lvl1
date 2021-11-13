@@ -1,9 +1,8 @@
-#!/usr/bin/env node
 import {
   greeting, mainQuestion, playerLost, playerWin, random,
 } from '../index.js';
 
-const brainEvenGame = () => {
+export const brainEvenGame = () => {
   let count = 0;
   const userName = greeting();
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
@@ -20,5 +19,3 @@ const brainEvenGame = () => {
   }
   return playerWin(userName);
 };
-
-export default brainEvenGame();
