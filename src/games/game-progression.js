@@ -24,4 +24,5 @@ const brainProgressionGame = () => {
   }
   return playerWin(userName);
 };
-console.log(brainProgressionGame());
+
+export default brainProgressionGame();

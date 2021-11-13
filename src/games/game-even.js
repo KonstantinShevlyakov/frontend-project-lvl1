@@ -20,4 +20,5 @@ const brainEvenGame = () => {
   }
   return playerWin(userName);
 };
-console.log(brainEvenGame());
+
+export default brainEvenGame();

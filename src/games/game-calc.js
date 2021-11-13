@@ -23,4 +23,5 @@ const brainCalcGame = () => {
   }
   return playerWin(userName);
 };
-console.log(brainCalcGame());
+
+export default brainCalcGame();

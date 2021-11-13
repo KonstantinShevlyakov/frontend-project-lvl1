@@ -22,4 +22,5 @@ const brainGCDGame = () => {
   }
   return playerWin(userName);
 };
-console.log(brainGCDGame());
+
+export default brainGCDGame();

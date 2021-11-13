@@ -21,4 +21,5 @@ const brainPrimeGame = () => {
   }
   return playerWin(userName);
 };
-console.log(brainPrimeGame());
+
+export default brainPrimeGame();
