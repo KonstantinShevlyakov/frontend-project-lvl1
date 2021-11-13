@@ -31,8 +31,9 @@ export const getCalcResult = (num1, num2, operator) => {
       return (num1 + num2);
     case '*':
       return (num1 * num2);
+    default:
+      return 'Have no operator';
   }
-  return ('Error');
 };
 
 export const getGCD = (num1, num2) => {
