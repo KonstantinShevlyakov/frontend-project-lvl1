@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import {
   getProg, getHiddenElement, greeting, mainQuestion, playerLost, playerWin, random,
-} from '../src/index.js';
+} from '../index.js';
 
 const brainProgressionGame = () => {
   let count = 0;

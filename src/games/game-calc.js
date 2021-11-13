@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import {
   greeting, mainQuestion, playerLost, playerWin, random, getRandomOperator, getCalcResult,
-} from '../src/index.js';
+} from '../index.js';
 
 const brainCalcGame = () => {
   let count = 0;

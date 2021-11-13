@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import {
   getGCD, greeting, mainQuestion, playerLost, playerWin, random,
-} from '../src/index.js';
+} from '../index.js';
 
 const brainGCDGame = () => {
   let count = 0;

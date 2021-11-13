@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import {
   greeting, mainQuestion, playerLost, playerWin, random,
-} from '../src/index.js';
+} from '../index.js';
 
 const brainEvenGame = () => {
   let count = 0;
