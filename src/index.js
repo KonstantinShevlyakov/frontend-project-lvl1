@@ -16,23 +16,3 @@ export const playerLost = (wrongAnswer, correctAnswer, userName) => (`"${wrongAn
 export const playerWin = (userName) => console.log(`Congratulations,${userName}!`);
 
 export const random = (min, max) => Math.floor(Math.random() * (max - min)) + min;
-
-export const getRandomOperator = () => {
-  const operators = ['-', '+', '*'];
-  const randomOperator = operators[Math.floor(Math.random() * operators.length)];
-  return randomOperator;
-};
-
-export const getCalcResult = (num1, num2, operator) => {
-  switch (operator) {
-    case '-':
-      return (num1 - num2);
-    case '+':
-      return (num1 + num2);
-    case '*':
-      return (num1 * num2);
-    default:
-      return 'Have no operator';
-  }
-};
-

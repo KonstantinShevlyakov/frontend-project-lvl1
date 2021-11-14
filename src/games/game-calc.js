@@ -1,6 +1,25 @@
 import {
-  greeting, mainQuestion, playerLost, playerWin, random, getRandomOperator, getCalcResult,
+  greeting, mainQuestion, playerLost, playerWin, random,
 } from '../index.js';
+
+const getRandomOperator = () => {
+  const operators = ['-', '+', '*'];
+  const randomOperator = operators[Math.floor(Math.random() * operators.length)];
+  return randomOperator;
+};
+
+const getCalcResult = (num1, num2, operator) => {
+  switch (operator) {
+    case '-':
+      return (num1 - num2);
+    case '+':
+      return (num1 + num2);
+    case '*':
+      return (num1 * num2);
+    default:
+      return 'Have no operator';
+  }
+};
 
 export const brainCalcGame = () => {
   let count = 0;
