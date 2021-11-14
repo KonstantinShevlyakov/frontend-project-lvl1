@@ -43,17 +43,3 @@ export const getGCD = (num1, num2) => {
   }
   return num1;
 };
-
-export const isPrime = (num) => {
-  const smallestDivisor = (numeral) => {
-    let counter = 2;
-    for (; numeral % counter !== 0;) {
-      counter += 1;
-    }
-    return counter;
-  };
-  if (num >= 1 && smallestDivisor(num) === num) {
-    return 'yes';
-  }
-  return 'no';
-};
