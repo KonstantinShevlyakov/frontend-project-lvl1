@@ -44,40 +44,6 @@ export const getGCD = (num1, num2) => {
   return num1;
 };
 
-export const getProg = (arrayLength, progStep, element) => {
-  const array = [];
-  let item = element;
-  array.push(item);
-  for (let i = 1; i < arrayLength; i += 1) {
-    item += progStep;
-    array.push(item);
-  }
-  const randomElement = array[Math.floor(Math.random() * array.length)];
-  const index = array.indexOf(randomElement);
-  array[index] = '..';
-  return array;
-};
-
-export const getHiddenElement = (array) => {
-  const index = array.indexOf('..');
-  let element;
-  let progStep;
-  if (index === 0) {
-    progStep = array[2] - array[1];
-    element = array[1] - progStep;
-    return element;
-  }
-  if (index === array.length - 1) {
-    progStep = array[index - 1] - array[index - 2];
-    element = array[index - 1] + progStep;
-    return element;
-  }
-  progStep = (array[index + 1] - array[index - 1]) / 2;
-  element = array[index - 1] + progStep;
-
-  return element;
-};
-
 export const isPrime = (num) => {
   const smallestDivisor = (numeral) => {
     let counter = 2;
