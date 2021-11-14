@@ -1,6 +1,15 @@
 import {
-  getGCD, greeting, mainQuestion, playerLost, playerWin, random,
+  greeting, mainQuestion, playerLost, playerWin, random,
 } from '../index.js';
+
+
+const getGCD = (num1, num2) => {
+  if (num2 !== 0) {
+    const tmpNum = num1 % num2;
+    return getGCD(num2, tmpNum);
+  }
+  return num1;
+};
 
 export const brainGCDGame = () => {
   let count = 0;
