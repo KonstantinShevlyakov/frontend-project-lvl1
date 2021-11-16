@@ -18,3 +18,8 @@ export const brainEvenGame = () => {
   }
   return playerWin(userName);
 };
+
+const mainGame = (correctAnswers, questions, rules) => {
+
+}
+
