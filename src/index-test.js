@@ -8,15 +8,15 @@ const gameProperties = (announcement, questions, correctsResults, userName) => {
         if (answer === correctsResults[i]) {
             console.log('Correct');
         } else {
-            console.log(`${answer} is wrong answer ;(. Correct answer was ${correctsResults[i]}`);
+            console.log(`${answer} is wrong answer ;(. Correct answer was ${correctsResults[i]}. Let's try again, ${userName}`);
             break;
         }
-        if (i === 3) {
+        if (i === 2) {
             console.log(`Congratulations, ${userName}`);
-        } else {
-            console.log(`Let's try again, ${userName}`);
         }
     }
 };
 
-export default gameProperties();
+export {
+gameProperties
+};

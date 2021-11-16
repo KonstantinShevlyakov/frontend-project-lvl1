@@ -1,6 +1,5 @@
 import { random, greeting } from '../index.js';
 
-console.log(greeting());
 const announcement = 'Answer "yes" if the number is even, otherwise answer "no".';
 const questions = [];
 const correctResults = [];
