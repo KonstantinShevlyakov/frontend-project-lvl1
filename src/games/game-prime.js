@@ -29,7 +29,7 @@ export const brainPrimeGame = () => {
       console.log('Correct!');
       count += 1;
     } else {
-      console.log(playerLost(question, correctResult, userName));
+      return playerLost(question, correctResult, userName);
       count = 0;
     }
   }

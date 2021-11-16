@@ -24,7 +24,7 @@ export const brainGCDGame = () => {
       console.log('Correct!');
       count += 1;
     } else {
-      console.log(playerLost(question, correctResult, userName));
+      playerLost(question, correctResult, userName);
       count = 0;
     }
   }

@@ -13,8 +13,7 @@ export const brainEvenGame = () => {
       console.log('Correct!');
       count += 1;
     } else {
-      console.log(playerLost(question, (num % 2 ? 'no' : 'yes'), userName));
-      count = 0;
+      return playerLost(question, (num % 2 ? 'no' : 'yes'), userName);
     }
   }
   return playerWin(userName);

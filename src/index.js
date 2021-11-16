@@ -11,7 +11,7 @@ export const mainQuestion = (num) => {
   return question;
 };
 
-export const playerLost = (wrongAnswer, correctAnswer, userName) => (`"${wrongAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}".\nLet's try again, ${userName}!`);
+export const playerLost = (wrongAnswer, correctAnswer, userName) => console.log(`"${wrongAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}".\nLet's try again, ${userName}!`);
 
 export const playerWin = (userName) => console.log(`Congratulations,${userName}!`);
 
