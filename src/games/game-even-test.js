@@ -1,4 +1,4 @@
-import { random, greeting } from '../index.js';
+import { random } from '../index-test.js';
 
 const announcement = 'Answer "yes" if the number is even, otherwise answer "no".';
 const questions = [];

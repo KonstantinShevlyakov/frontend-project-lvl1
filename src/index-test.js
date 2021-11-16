@@ -1,5 +1,7 @@
 import readlineSync from 'readline-sync';
 
+const random = (min, max) => Math.floor(Math.random() * (max - min)) + min;
+
 const gameProperties = (announcement, questions, correctsResults, userName) => {
     console.log(announcement);
     for (let i = 0; i < 3; i += 1) {
@@ -18,5 +20,5 @@ const gameProperties = (announcement, questions, correctsResults, userName) => {
 };
 
 export {
-gameProperties
+gameProperties, random
 };
