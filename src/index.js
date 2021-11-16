@@ -1,18 +1,26 @@
 import readlineSync from 'readline-sync';
+import { greeting } from './cli.js'
 
-export const greeting = () => {
-  const userName = readlineSync.question('May I have your name? ');
-  console.log(`Hello ${userName}!`);
-  return userName;
+const random = (min, max) => Math.floor(Math.random() * (max - min)) + min;
+
+const gameProperties = (announcement, questions, correctsResults, greeting) => {
+    const name = greeting();
+    console.log(announcement);
+    for (let i = 0; i < 3; i += 1) {
+        console.log(`Question: ${questions[i]}`);
+        const answer = readlineSync.question('Your answer: ');
+        if (answer === correctsResults[i]) {
+            console.log('Correct');
+        } else {
+            console.log(`${answer} is wrong answer ;(. Correct answer was ${correctsResults[i]}. Let's try again, ${name}`);
+            break;
+        }
+        if (i === 2) {
+            console.log(`Congratulations, ${name}`);
+        }
+    }
 };
 
-export const mainQuestion = (num) => {
-  const question = readlineSync.question(`Question: ${num}\nYour answer:`);
-  return question;
+export {
+gameProperties, random
 };
-
-export const playerLost = (wrongAnswer, correctAnswer, userName) => console.log(`"${wrongAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}".\nLet's try again, ${userName}!`);
-
-export const playerWin = (userName) => console.log(`Congratulations,${userName}!`);
-
-export const random = (min, max) => Math.floor(Math.random() * (max - min)) + min;
