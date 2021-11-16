@@ -52,7 +52,6 @@ export const brainProgressionGame = () => {
       count += 1;
     } else {
       return playerLost(question, correctResult, userName);
-      count = 0;
     }
   }
   return playerWin(userName);
