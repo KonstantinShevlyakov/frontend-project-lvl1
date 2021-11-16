@@ -20,7 +20,7 @@ for (let i = 0; i < 3; i += 1) {
       correctResults.push(String(num1 * num2));
       break;
     default:
-       console.log('Have no operator');
+      console.log('Have no operator');
   }
 }
 
