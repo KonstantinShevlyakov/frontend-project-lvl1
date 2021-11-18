@@ -17,7 +17,7 @@ for (let i = 0; i < 3; i += 1) {
   correctResults.push(randomElement.toString());
   const index = array.indexOf(randomElement);
   array[index] = '..';
-  questions.push(array);
+  questions.push(array.toString().split(',').join(' '));
 }
 
 export { announcement, questions, correctResults };
