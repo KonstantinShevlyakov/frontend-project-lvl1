@@ -1,4 +1,4 @@
-import { random } from '../randomizer.js';
+import random from '../randomizer.js';
 
 const announcement = 'What number is missing in the progression?';
 const questions = [];

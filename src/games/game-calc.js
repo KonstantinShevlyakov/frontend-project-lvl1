@@ -1,4 +1,4 @@
-import { random } from '../randomizer.js';
+import random from '../randomizer.js';
 
 const announcement = 'What is the result of the expression?';
 const questions = [];

@@ -1,4 +1,4 @@
-import { random } from '../randomizer.js';
+import random from '../randomizer.js';
 
 const isPrime = (num) => {
   const smallestDivisor = (numeral) => {

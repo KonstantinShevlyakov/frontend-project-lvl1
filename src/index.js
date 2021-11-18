@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-const gameProperties = (announcement, questions, correctsResults, greeting) => {
+export default function gameProperties(announcement, questions, correctsResults, greeting) {
   const name = greeting();
   console.log(announcement);
   for (let i = 0; i < 3; i += 1) {
@@ -16,8 +16,4 @@ const gameProperties = (announcement, questions, correctsResults, greeting) => {
       console.log(`Congratulations, ${name}!`);
     }
   }
-};
-
-export {
-  gameProperties,
-};
+}

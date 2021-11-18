@@ -1,4 +1,4 @@
-import { random } from '../randomizer.js';
+import random from '../randomizer.js';
 
 const announcement = 'Answer "yes" if the number is even, otherwise answer "no".';
 const questions = [];
