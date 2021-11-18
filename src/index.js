@@ -9,7 +9,7 @@ const gameProperties = (announcement, questions, correctsResults, greeting) => {
     if (answer === correctsResults[i]) {
       console.log('Correct');
     } else {
-      console.log(`${answer} is wrong answer ;(. Correct answer was ${correctsResults[i]}. Let's try again, ${name}`);
+      console.log(`${answer} is wrong answer ;(. Correct answer was ${correctsResults[i]}. Let's try again, ${name}!`);
       break;
     }
     if (i === 2) {
