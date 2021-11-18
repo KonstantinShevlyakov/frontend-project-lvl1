@@ -1,4 +1,4 @@
-import { random } from '../index.js';
+import { random } from '../randomizer.js';
 
 const getGCD = (num1, num2) => {
   if (num2 !== 0) {

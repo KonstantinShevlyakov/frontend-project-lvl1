@@ -1,4 +1,4 @@
-import { random } from '../index.js';
+import { random } from '../randomizer.js';
 
 const announcement = 'What number is missing in the progression?';
 const questions = [];
@@ -13,7 +13,7 @@ for (let i = 0; i < 3; i += 1) {
     element += progStep;
     array.push(element);
   }
-  const randomElement = array[Math.floor(Math.random() * array.length)];
+  const randomElement = array[random(0, arrayLength - 1)];
   correctResults.push(randomElement.toString());
   const index = array.indexOf(randomElement);
   array[index] = '..';

@@ -1,7 +1,5 @@
 import readlineSync from 'readline-sync';
 
-const random = (min, max) => Math.floor(Math.random() * (max - min)) + min;
-
 const gameProperties = (announcement, questions, correctsResults, greeting) => {
   const name = greeting();
   console.log(announcement);
@@ -21,5 +19,5 @@ const gameProperties = (announcement, questions, correctsResults, greeting) => {
 };
 
 export {
-  gameProperties, random,
+  gameProperties,
 };
