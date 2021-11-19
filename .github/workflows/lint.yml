@@ -1,8 +1,7 @@
-name: github-actions-project
+name: lint
 on: push
 jobs:
   build:
     runs-on: macos-latest
-    steps:
-    - name: lint	
+    steps:	
       run: npx eslint --fix
