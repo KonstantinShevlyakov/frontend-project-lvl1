@@ -2,6 +2,6 @@ name: lint
 on: push
 jobs:
   build:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:	
      - run: npx eslint --fix
