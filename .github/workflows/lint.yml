@@ -4,4 +4,4 @@ jobs:
   build:
     runs-on: macos-latest
     steps:	
-      run: npx eslint --fix
+     - run: npx eslint --fix
