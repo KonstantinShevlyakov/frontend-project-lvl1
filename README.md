@@ -7,21 +7,23 @@
 ### Github-Actions badge:
 [![Linter](https://github.com/KonstantinShevlyakov/frontend-project-lvl1/actions/workflows/github-actions-project/badge.svg)](https://github.com/KonstantinShevlyakov/frontend-project-lvl1/actions)
 
-### Brain-even:
+### BrainEven:
+
 https://asciinema.org/a/c39JmU5tlgUAiHpwl6BMlrWMB
 
-### Brain-calc:
+### BrainCalc:
+
 https://asciinema.org/a/B8zN5OFLTKkt6xSjdgD46bTD4
 
-### Brain-GCD
+### BrainGCD
 
 https://asciinema.org/a/6qkZVY9tuULFpBFunpC9PZHEg
 
 
-### Brain-Progression
+### BrainProgression
 
 https://asciinema.org/a/bh9czEw35UkTT22wReWvLRPdr
 
-### Brain-Prime
+### BrainPrime
 
 https://asciinema.org/a/oNpOcfLc034obs59OIrjEB2bd
