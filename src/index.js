@@ -1,9 +1,9 @@
 import readlineSync from 'readline-sync';
 
-export default function gameProperties(announcement, questions, correctsResults, greeting) {
+export default function gameProperties(announcement, questions, correctsResults, greeting, rounds) {
   const name = greeting();
   console.log(announcement);
-  for (let i = 0; i < 3; i += 1) {
+  for (let i = 0; i < rounds; i += 1) {
     console.log(`Question: ${questions[i]}`);
     const answer = readlineSync.question('Your answer: ');
     if (answer === correctsResults[i]) {

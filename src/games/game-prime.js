@@ -9,18 +9,23 @@ const isPrime = (num) => {
     return counter;
   };
   if (num >= 1 && smallestDivisor(num) === num) {
-    return 'yes';
+    return true;
   }
-  return 'no';
+  return false;
 };
 
 const announcement = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 const questions = [];
 const correctResults = [];
-for (let i = 0; i < 3; i += 1) {
+const rounds = 3;
+for (let i = 0; i < rounds; i += 1) {
   const num = random(1, 100);
+  if (isPrime(num) === true) {
+    correctResults.push('yes')
+  } else {
+    correctResults.push('no')
+  }
   questions.push(num);
-  correctResults.push(isPrime(num));
 }
 
-export { announcement, questions, correctResults };
+export { announcement, questions, correctResults, rounds };
