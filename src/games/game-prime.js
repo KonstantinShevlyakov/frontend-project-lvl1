@@ -21,9 +21,9 @@ const rounds = 3;
 for (let i = 0; i < rounds; i += 1) {
   const num = random(1, 100);
   if (isPrime(num) === true) {
-    correctResults.push('yes')
+    correctResults.push('yes');
   } else {
-    correctResults.push('no')
+    correctResults.push('no');
   }
   questions.push(num);
 }
