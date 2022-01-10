@@ -21,4 +21,6 @@ for (let i = 0; i < rounds; i += 1) {
   questions.push(progression.toString().split(',').join(' '));
 }
 
-export { announcement, questions, correctResults, rounds };
+export {
+  announcement, questions, correctResults, rounds,
+};

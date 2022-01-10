@@ -19,4 +19,6 @@ for (let i = 0; i < rounds; i += 1) {
   correctResults.push(String(getGCD(num1, num2)));
 }
 
-export { announcement, questions, correctResults, rounds };
+export {
+  announcement, questions, correctResults, rounds,
+};

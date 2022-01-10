@@ -10,4 +10,6 @@ for (let i = 0; i < rounds; i += 1) {
   correctResults.push((num % 2 === 0) ? 'yes' : 'no');
 }
 
-export { announcement, questions, correctResults, rounds };
+export {
+  announcement, questions, correctResults, rounds,
+};

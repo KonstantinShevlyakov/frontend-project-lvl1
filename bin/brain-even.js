@@ -2,6 +2,8 @@
 
 import greeting from '../src/cli.js';
 import gameProperties from '../src/index.js';
-import { announcement, questions, correctResults, rounds } from '../src/games/game-even.js';
+import {
+  announcement, questions, correctResults, rounds,
+} from '../src/games/game-even.js';
 
 gameProperties(announcement, questions, correctResults, greeting, rounds);

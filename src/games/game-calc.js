@@ -25,4 +25,6 @@ for (let i = 0; i < rounds; i += 1) {
   }
 }
 
-export { announcement, questions, correctResults, rounds };
+export {
+  announcement, questions, correctResults, rounds,
+};

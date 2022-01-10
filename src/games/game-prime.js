@@ -28,4 +28,6 @@ for (let i = 0; i < rounds; i += 1) {
   questions.push(num);
 }
 
-export { announcement, questions, correctResults, rounds };
+export {
+  announcement, questions, correctResults, rounds,
+};
