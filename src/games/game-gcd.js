@@ -9,16 +9,17 @@ const getGCD = (num1, num2) => {
 };
 
 const announcement = 'Find the greatest common divisor of given numbers.';
-const questions = [];
-const correctResults = [];
+const gameData = [];
 const rounds = 3;
 for (let i = 0; i < rounds; i += 1) {
+  const questionsResults = {};
   const num1 = random(0, 100);
   const num2 = random(0, 100);
-  questions.push(`${num1} ${num2}`);
-  correctResults.push(String(getGCD(num1, num2)));
+  questionsResults.question = (`${num1} ${num2}`);
+  questionsResults.answer = (String(getGCD(num1, num2)));
+  gameData.push(questionsResults);
 }
 
 export {
-  announcement, questions, correctResults, rounds,
+  announcement, rounds, gameData,
 };

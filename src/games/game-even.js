@@ -1,15 +1,16 @@
 import random from '../randomizer.js';
 
 const announcement = 'Answer "yes" if the number is even, otherwise answer "no".';
-const questions = [];
-const correctResults = [];
+const gameData = [];
 const rounds = 3;
 for (let i = 0; i < rounds; i += 1) {
+  const questionResult = {};
   const num = random(0, 100);
-  questions.push(num);
-  correctResults.push((num % 2 === 0) ? 'yes' : 'no');
+  questionResult.question = num;
+  questionResult.answer = ((num % 2 === 0) ? 'yes' : 'no');
+  gameData.push(questionResult);
 }
 
 export {
-  announcement, questions, correctResults, rounds,
+  announcement, rounds, gameData,
 };

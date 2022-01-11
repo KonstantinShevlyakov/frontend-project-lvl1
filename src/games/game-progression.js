@@ -1,10 +1,10 @@
 import random from '../randomizer.js';
 
 const announcement = 'What number is missing in the progression?';
-const questions = [];
-const correctResults = [];
+const gameData = [];
 const rounds = 3;
 for (let i = 0; i < rounds; i += 1) {
+  const questionResult = {};
   const progression = [];
   const progressionLength = random(5, 10);
   const progStep = random(2, 10);
@@ -15,12 +15,13 @@ for (let i = 0; i < rounds; i += 1) {
     progression.push(element);
   }
   const randomElement = progression[random(0, progressionLength - 1)];
-  correctResults.push(randomElement.toString());
+  questionResult.answer = randomElement.toString();
   const index = progression.indexOf(randomElement);
   progression[index] = '..';
-  questions.push(progression.toString().split(',').join(' '));
+  questionResult.question = (progression.toString().split(',').join(' '));
+  gameData.push(questionResult);
 }
 
 export {
-  announcement, questions, correctResults, rounds,
+  announcement, rounds, gameData,
 };

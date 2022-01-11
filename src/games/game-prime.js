@@ -15,19 +15,20 @@ const isPrime = (num) => {
 };
 
 const announcement = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-const questions = [];
-const correctResults = [];
+const gameData = [];
 const rounds = 3;
 for (let i = 0; i < rounds; i += 1) {
+  const questionResults = {};
   const num = random(1, 100);
   if (isPrime(num) === true) {
-    correctResults.push('yes');
+    questionResults.answer = 'yes';
   } else {
-    correctResults.push('no');
+    questionResults.answer = 'no';
   }
-  questions.push(num);
+  questionResults.question = num;
+  gameData.push(questionResults);
 }
 
 export {
-  announcement, questions, correctResults, rounds,
+  announcement, gameData, rounds,
 };
