@@ -9,11 +9,10 @@ export default function gameProperties(announcement, greeting, rounds, gameData)
     if (answer === gameData[i].answer) {
       console.log('Correct');
     } else {
-      console.log(`${answer} is wrong answer ;(. Correct answer was ${gameData[i].answer}. Let's try again, ${name}!`);
-      break;
+      return console.log(`${answer} is wrong answer ;(. Correct answer was ${gameData[i].answer}. Let's try again, ${name}!`);
     }
     if (i === 2) {
       console.log(`Congratulations, ${name}!`);
     }
+    }
   }
-}
