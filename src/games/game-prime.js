@@ -20,11 +20,7 @@ const rounds = 3;
 for (let i = 0; i < rounds; i += 1) {
   const questionResults = {};
   const num = random(1, 100);
-  if (isPrime(num) === true) {
-    questionResults.answer = 'yes';
-  } else {
-    questionResults.answer = 'no';
-  }
+  isPrime(num) ? questionResults.answer = 'yes' : questionResults.answer = 'no';
   questionResults.question = num;
   gameData.push(questionResults);
 }
