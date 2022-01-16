@@ -11,7 +11,7 @@ export default function gameProperties(announcement, gameData) {
   console.log(announcement);
   const rounds = roundsCount();
   for (let i = 0; i < rounds; i += 1) {
-    console.log('Question: ', gameData[i].question);
+    console.log(`Question: ${gameData[i].question}`);
     const answer = readlineSync.question('Your answer: ');
     if (answer === gameData[i].answer) {
       console.log('Correct');
