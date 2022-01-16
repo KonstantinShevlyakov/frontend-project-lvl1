@@ -4,6 +4,6 @@
 // import {
 //   announcement, rounds, gameData,
 // } from '../src/games/game-progression.js';
-import progression from '../src/games/game-progression.js';
+import prog from '../src/games/game-progression.js';
 
-progression();
+prog();

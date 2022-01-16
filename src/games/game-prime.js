@@ -1,6 +1,5 @@
 import random from '../randomizer.js';
-import gameProperteis from '../index.js';
-import { roundsCount } from '../index.js';
+import gameProperteis, { roundsCount } from '../index.js';
 
 export default function prime() {
   const isPrime = (num) => {
@@ -23,7 +22,7 @@ export default function prime() {
   for (let i = 0; i < rounds; i += 1) {
     const questionResults = {};
     const num = random(1, 100);
-    isPrime(num) ? questionResults.answer = 'yes' : questionResults.answer = 'no';
+    questionResults.answer = isPrime(num) ? 'yes' : 'no';
     questionResults.question = num;
     gameData.push(questionResults);
   }

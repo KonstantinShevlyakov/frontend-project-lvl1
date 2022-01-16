@@ -1,11 +1,10 @@
 import random from '../randomizer.js';
-import gameProperties from '../index.js';
-import { roundsCount } from '../index.js';
+import gameProperties, { roundsCount } from '../index.js';
 
-export default function progression() {
+export default function prog() {
   const announcement = 'What number is missing in the progression?';
   const gameData = [];
-  const rounds = 3;
+  const rounds = roundsCount();
   for (let i = 0; i < rounds; i += 1) {
     const questionResult = {};
     const progression = [];

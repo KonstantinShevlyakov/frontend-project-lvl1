@@ -1,9 +1,7 @@
 import random from '../randomizer.js';
-import gameProperties from '../index.js';
-import { roundsCount } from '../index.js';
+import gameProperties, { roundsCount } from '../index.js';
 
-export default function calc()
-{
+export default function calc() {
   const announcement = 'What is the result of the expression?';
   const gameData = [];
   const operators = ['-', '*', '+'];

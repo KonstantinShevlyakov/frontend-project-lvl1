@@ -1,8 +1,7 @@
 import random from '../randomizer.js';
-import gameProperties from '../index.js';
-import { roundsCount } from '../index.js';
+import gameProperties, { roundsCount } from '../index.js';
 
-export default function even () {
+export default function even() {
   const announcement = 'Answer "yes" if the number is even, otherwise answer "no".';
   const gameData = [];
   const rounds = roundsCount();

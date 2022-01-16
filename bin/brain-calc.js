@@ -5,6 +5,6 @@
 // import {
 //   announcement, gameData, rounds
 // } from '../src/games/game-calc.js';
-import calc from '../src/games/game-calc.js'
+import calc from '../src/games/game-calc.js';
 
 calc();

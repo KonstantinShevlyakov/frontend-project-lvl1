@@ -1,8 +1,7 @@
 import random from '../randomizer.js';
-import gameProperties from '../index.js';
-import { roundsCount } from '../index.js';
+import gameProperties, { roundsCount } from '../index.js';
 
-export default function gcd () {
+export default function gcd() {
   const getGCD = (num1, num2) => {
     if (num2 !== 0) {
       const tmpNum = num1 % num2;

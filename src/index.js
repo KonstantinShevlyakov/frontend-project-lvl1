@@ -1,8 +1,8 @@
 import readlineSync from 'readline-sync';
 
-function roundsCount () {
+function roundsCount() {
   return 3;
-};
+}
 
 export default function gameProperties(announcement, gameData) {
   console.log('Welcome to the Brain Games!');
@@ -21,7 +21,8 @@ export default function gameProperties(announcement, gameData) {
     if (i === 2) {
       console.log(`Congratulations, ${name}!`);
     }
-    }
   }
+  return null;
+}
 
 export { roundsCount };
