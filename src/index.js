@@ -1,8 +1,15 @@
 import readlineSync from 'readline-sync';
 
-export default function gameProperties(announcement, greeting, rounds, gameData) {
-  const name = greeting();
+function roundsCount () {
+  return 3;
+};
+
+export default function gameProperties(announcement, gameData) {
+  console.log('Welcome to the Brain Games!');
+  const name = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${name}!`);
   console.log(announcement);
+  const rounds = roundsCount();
   for (let i = 0; i < rounds; i += 1) {
     console.log(`Question: ${gameData[i].question}`);
     const answer = readlineSync.question('Your answer: ');
@@ -16,3 +23,5 @@ export default function gameProperties(announcement, greeting, rounds, gameData)
     }
     }
   }
+
+export { roundsCount };
